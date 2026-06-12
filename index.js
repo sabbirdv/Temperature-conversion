@@ -4,7 +4,7 @@ let Celsius = document.getElementById("toCelsius");
 let resultBox = document.getElementById("resultBox");
 let temp;
 
-
+textBox.focus();
 
 function convert(){
 
@@ -30,4 +30,11 @@ function convert(){
     }
     
     
+}
+function clearData(){
+    textBox.value = "";
+    resultBox.textContent = "";
+    Fahrenheit.checked = false;
+    Celsius.checked = false;
+    textBox.focus();
 }
