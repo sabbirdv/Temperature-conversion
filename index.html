@@ -13,7 +13,7 @@
   
 
 <form action="" class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl bg-linear-0 from-blue-200 to-red-200">
-    <h1 class="text-[40px] font-semibold uppercase" id="myH1">Temperature conversion</h1>
+    <h1 class="text-[40px] text-center font-semibold uppercase" id="myH1">Temperature conversion</h1>
     <input type="number" placeholder="_ _ _ _" name="" id="textBox" class="border-purple-400 border-2 bg-purple-100 rounded-md p-3 w-30 text-center text-[30px] focus:outline-0">
 
     <div class="flex items-center gap-2 p-1 px-2 bg-gray-100 rounded-md">
@@ -25,16 +25,12 @@
         <label for="toCelsius">Fahrenheit to Celsius</label>
     </div>
 
-
-    <button type="button" onclick="convert()" class="py-3 px-5 bg-green-500 rounded-md font-medium text-lg">Convert</button>
+    <div class="flex items-center gap-2">
+     <button type="button"  onclick="clearData()" class="py-3 px-5 bg-red-600 rounded-md font-medium text-lg text-white">Reset</button>   
+    <button type="button" onclick="convert()" class="py-3 px-5 bg-green-600 rounded-md font-medium text-lg text-white">Convert</button>
+    </div>
     <p class="border-green-400 border-2 bg-green-100 rounded-md p-3 mt-3 min-w-80 text-[30px]">The result is : <span  id="resultBox">_ _ _ _</span> </p>
 </form>
-
-
-
-
-
-
 
 
 
